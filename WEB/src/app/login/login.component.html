@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+  <title>Inicio</title>
+  <head>
+  </head> 
+  <body>
+    <p align="center"> <font size="6px"><b>Iniciar sesión en ESPotify</b></font> </p>
+    
+    <form name="inicioSesion" action="Login" method="post">
+        
+      <div class="container">
+          
+          <br>
+          <label for="uname"><b>Nombre de usuario</b></label>
+          <input type="text" placeholder="Introduzca su nombre de usuario" name="uname" required>
+          
+          <br><br>
+          <label for="psw"><b>Contraseña</b></label>
+          <input type="password" placeholder="Introduzca la contraseña" name="psw" required>
+          
+          <br><br>
+          <button (click)="loginSuccesful('ANGEL')"><a routerLink='/SuccesfulLogin'></a>INICIAR SESION</button>
+          
+          <br><br>
+          <label>
+              <input type="checkbox" checked="checked" name="remember"><font size="2px">Recuérdame</font>
+          </label>
+      </div>
+    
+      <div class="container" style="background-color:#f1f1f1">
+          <button type="button" class="cancelbtn">CANCELAR</button>
+          <span class="psw"><a href="#"><font size="2px">¿Has olvidado la contraseña?</font></a></span>
+      </div>
+        
+    </form>
+    <a routerLink='/SuccesfulLogin'>Login correcto</a>
+
+  </body>  
+</html>
