@@ -1,0 +1,123 @@
+.topnav .search-container {
+    display: block;
+    float: right;
+    
+}
+
+.topnav {
+    background-color: coral;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+.column {
+    float: left;
+  }
+
+.lists {
+    height: 400px; 
+}
+
+.comments{
+    height: 550px; 
+}
+
+.centro{
+    height: 550px; 
+}
+
+.current-song{
+    height: 100px; 
+}
+
+.add-comment{
+    height: 100px; 
+}
+
+.player{
+    height: 100px; 
+}
+
+.lists, .current-song{
+    width: 15%;
+}
+  
+.comments , .add-comment{
+    width: 15%;
+  }
+  
+.centro, .player {
+    
+    width: 70%;
+  }
+
+  .player{
+    text-align: center;
+  }
+
+  .button.play {
+    text-align: center;
+    border-style: solid;
+    border-color: transparent transparent transparent #202020;
+    box-sizing: border-box;
+    width: 74px;
+    height: 74px;
+    border-width: 37px 0px 37px 74px;
+  }
+
+  .button.pause {
+    text-align: center;
+    width: 74px;
+    height: 74px;
+    border-style: solid;
+    border-width: 0px 0px 0px 37px;
+    border-color: #202020;
+  }
+
+h2{
+    float:left
+}
+
+  li {
+    
+    float: left;
+  }
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    background-color: #111111;
+  }
+  li a:hover:not(.active) {
+    background-color: #111;
+  }
+  
+  .active {
+    background-color: #4CAF50;
+  }
+  .Opciones {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333333;
+  }
+
+  ul{
+    list-style-type: none;
+  }
+
+ 
+ div .container{
+    text-align: center;
+ } 
+  
