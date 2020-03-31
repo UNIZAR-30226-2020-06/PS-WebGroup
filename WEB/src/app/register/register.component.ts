@@ -12,4 +12,10 @@ export class RegisterComponent implements OnInit {
   ngOnInit() {
   }
 
+  registerSuccesful(nombre, email, contraseña){
+    window.alert('Conozco tus datos muajaja:');
+    console.log(nombre, email, contraseña);
+
+  }
+
 }

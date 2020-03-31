@@ -27,10 +27,11 @@
       <li><a class="active" [routerLink]="['/MyProfile', nombre, 'MySongs' ]">Mis canciones</a></li>
       <li><a [routerLink]="['/MyProfile', nombre, 'MyPodCasts' ]">Mis podcasts</a></li>
     </ul>
-    <div *ngFor="let item of users[0].canciones; index as id"> 
-      <a [routerLink]="['/MyProfile', item]" >{{item}}</a>
+    <div>
+      Select File to Upload:<input #file type="file" name="fileName">
     </div>
-    <button class="AddSong" [routerLink]="['/MyProfile','AddSong1']"> Add </button>
+    <button [routerLink]="['/MyProfile','AddSong2']"> Next </button>
+    
 </div>
   <div class="column comments"style="background-color:#ccc;">
     <h2>Column 3</h2>

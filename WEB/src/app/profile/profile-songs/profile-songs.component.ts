@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { UserService } from '../../user.service';
 import { VisitUserService } from '../../visit-user.service';
-import { users } from '../../users';
+import { UsuariosService} from'../../usuarios.service';
 
 @Component({
   selector: 'app-profile-songs',
@@ -10,17 +10,19 @@ import { users } from '../../users';
 })
 export class ProfileSongsComponent implements OnInit {
 
-  users = users;
+  users ;
   minombre;
   nombre;
   constructor(
     private user: UserService,
-    private visit: VisitUserService
+    private visit: VisitUserService,
+    private usuario: UsuariosService
   ) { }
 
   ngOnInit() {
     this.minombre = this.user.getSession();
     this.nombre= this.visit.getSession();
+    this.users = this.usuario.getUsers();
     console.log(this.user.getSession());
     console.log(this.visit.getSession());
   }

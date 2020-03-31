@@ -27,10 +27,29 @@
       <li><a class="active" [routerLink]="['/MyProfile', nombre, 'MySongs' ]">Mis canciones</a></li>
       <li><a [routerLink]="['/MyProfile', nombre, 'MyPodCasts' ]">Mis podcasts</a></li>
     </ul>
-    <div *ngFor="let item of users[0].canciones; index as id"> 
-      <a [routerLink]="['/MyProfile', item]" >{{item}}</a>
-    </div>
-    <button class="AddSong" [routerLink]="['/MyProfile','AddSong1']"> Add </button>
+    <form name="inicioSesion" action="hacer_registro" method="post">
+          
+      <div class="container">
+          
+        <br>
+          <label for="song-name"><b>Titulo</b></label>
+          <input #songname type="text" placeholder="Introduzca nombre canción" name="song">
+          
+        <br><br>
+          <label for="song-category"><b>Categoria:</b></label>
+          <select [(ngModel)]="categories" [ngModelOptions]="{standalone: true}">
+            <option *ngFor="let items of categories" [ngValue]="items">
+              {{ items }}
+            </option>
+          </select>
+        <br><br>
+          <button type="submit" (click)="usuario.AddSong(songname.value,'0')" [routerLink]="['/MyProfile', nombre]">SUBIR CANCION</button>
+        <br><br>
+          <button type="reset" class="cancelbtn">LIMPIAR CAMPOS</button>
+
+      </div>
+    </form>
+
 </div>
   <div class="column comments"style="background-color:#ccc;">
     <h2>Column 3</h2>

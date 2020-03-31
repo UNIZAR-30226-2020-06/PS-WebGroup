@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { UserService } from '../../user.service';
-import {users} from'../../users';
+import { UsuariosService} from'../../usuarios.service';
 
 @Component({
   selector: 'app-my-profile-podcasts',
@@ -9,15 +9,17 @@ import {users} from'../../users';
 })
 export class MyProfilePodcastsComponent implements OnInit {
 
-  users = users;
+  users
   nombre
 
   constructor(
-    private user: UserService
+    private user: UserService,
+    private usuario: UsuariosService
   ) { }
 
   ngOnInit() {
     this.nombre = this.user.getSession();
+    this.users = this.usuario.getUsers();
     console.log(this.nombre);
   }
 }

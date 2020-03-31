@@ -5,28 +5,28 @@
   </head> 
   <body>
 
-    <form name="inicioSesion" action="InsertUserServlet" method="post">
+    <form name="inicioSesion" action="hacer_registro" method="post">
           
       <div class="container">
           
         <br>
           <label for="uname"><b>Usuario</b></label>
-          <input type="text" placeholder="Introduzca su nombre de usuario" name="uname">
+          <input #nombre type="text" placeholder="Introduzca su nombre de usuario" name="nombre">
           
         <br><br>
           <label for="psw"><b>Contraseña</b></label>
-          <input type="password" placeholder="Introduzca su contraseña" name="psw" >
+          <input #contrasena type="password" placeholder="Introduzca su contraseña" name="contraseña" >
 
         <br><br>
           <label for="psw"><b>Repetir contraseña</b></label>
-          <input type="password" placeholder="Repita su contraseña" name="repsw">
+          <input type="password" placeholder="Repita su contraseña" name="password">
 
         <br><br>
           <label for="psw"><b>Email</b></label>
-          <input type="text" placeholder="Introduzca su email" name="email">
+          <input #email type="text" placeholder="Introduzca su email" name="email">
           
         <br><br>
-          <button type="submit"><a routerLink='/Login'>CREAR USUARIO</a> </button>
+          <button type="submit" (click)="registerSuccesful(nombre.value,contrasena.value,email.value)"><a routerLink='/Login'>CREAR USUARIO</a> </button>
         <br><br>
           <button type="reset" class="cancelbtn">LIMPIAR CAMPOS</button>
 

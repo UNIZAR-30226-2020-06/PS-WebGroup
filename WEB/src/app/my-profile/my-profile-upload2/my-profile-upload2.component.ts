@@ -3,14 +3,15 @@ import {UserService} from '../../user.service';
 import { UsuariosService} from'../../usuarios.service';
 
 @Component({
-  selector: 'app-my-profile-songs',
-  templateUrl: './my-profile-songs.component.html',
+  selector: 'app-my-profile-upload2',
+  templateUrl: './my-profile-upload2.component.html',
   styleUrls: ['../my-profile.component.css']
 })
-export class MyProfileSongsComponent implements OnInit {
+export class MyProfileUpload2Component implements OnInit {
 
   users 
   nombre
+  categories
 
   constructor(
     private user: UserService,
@@ -20,7 +21,14 @@ export class MyProfileSongsComponent implements OnInit {
   ngOnInit() {
     this.nombre = this.user.getSession();
     this.users = this.usuario.getUsers();
+    this.categories = this.usuario.getCategories();
     console.log(this.nombre);
+  }
+
+  addSong(cancion){
+    this.users[0].canciones.push(cancion);
+    console.log(cancion)
+
   }
 
 }

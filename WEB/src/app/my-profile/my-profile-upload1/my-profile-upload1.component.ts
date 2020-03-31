@@ -3,11 +3,11 @@ import {UserService} from '../../user.service';
 import { UsuariosService} from'../../usuarios.service';
 
 @Component({
-  selector: 'app-my-profile-songs',
-  templateUrl: './my-profile-songs.component.html',
+  selector: 'app-my-profile-upload1',
+  templateUrl: './my-profile-upload1.component.html',
   styleUrls: ['../my-profile.component.css']
 })
-export class MyProfileSongsComponent implements OnInit {
+export class MyProfileUpload1Component implements OnInit {
 
   users 
   nombre
@@ -23,4 +23,6 @@ export class MyProfileSongsComponent implements OnInit {
     console.log(this.nombre);
   }
 
+
 }
+

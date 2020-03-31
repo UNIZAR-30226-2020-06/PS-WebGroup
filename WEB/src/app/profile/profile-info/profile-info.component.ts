@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { UserService } from '../../user.service';
-import { users } from '../../users';
+import { UsuariosService} from'../../usuarios.service';
 import { VisitUserService } from 'src/app/visit-user.service';
 
 @Component({
@@ -10,18 +10,20 @@ import { VisitUserService } from 'src/app/visit-user.service';
 })
 export class ProfileInfoComponent implements OnInit {
 
-  users = users;
+  users
   minombre;
   nombre
 
   constructor(
     private user: UserService,
-    private visit: VisitUserService
+    private visit: VisitUserService,
+    private usuario: UsuariosService
   ) { }
 
   ngOnInit() {
     this.minombre = this.user.getSession();
     this.nombre = this.visit.getSession();
+    this.users = this.usuario.getUsers();
     console.log(this.minombre);
   }
 

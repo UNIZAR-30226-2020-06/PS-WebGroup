@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { UserService } from '../user.service';
 import { CommentsService } from '../comments.service';
-import { users} from '../users';
+import { UsuariosService } from '../usuarios.service';
 
 @Component({
   selector: 'app-music-player',
@@ -10,18 +10,19 @@ import { users} from '../users';
 })
 export class MusicPlayerComponent implements OnInit {
   
-  users = users;
+  users 
   minombre;
   a: string;
   coms: CommentsService = new CommentsService();
 
   constructor(
     private user: UserService,
-    
+    private usuarios: UsuariosService
   ) { }
 
   ngOnInit() {
     this.minombre = this.user.getSession();
+    this.users = this.usuarios.getUsers();
     console.log(this.minombre);
   }
 
