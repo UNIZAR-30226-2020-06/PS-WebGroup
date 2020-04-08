@@ -531,7 +531,7 @@
                         alexander@paper.com
                     </div>
                     <a href="#" class="btn btn-outline-primary btn-sm  mt-3">Send Email</a>
-                    <button class="btn btn-abrir-popup btn-sm  mt-3">Subir Canción</button>
+                    <button class="btn btn-abrir-popup btn-sm  mt-3" id="abrir-popup">Subir Canción</button>
                     <div class="mt-5"> 
                         <ul class="social social list-inline">
                             <li class="list-inline-item"><a href="#" class="grey-text"><i class="icon-facebook"></i></a>
@@ -642,14 +642,14 @@
 </div>
 
 <!-- Bloque de subir cancion datos-->
-<div class="overlay-pop-up">
-    <div class="popup">
+<div class="overlay-pop-up" id="overlay-subir-cancion">
+    <div class="popup" id="popup-subir-cancion">
         <header class="relative nav-sticky card">
                 <a href="#" id="btn-cerrar-subir-cancion" class="btn-cerrar-popup"><i class="icon-close1"></i></a>
 				<h3>SUBIR CANCIÓN</h3>
 				<h5>Paso 1: subir el fichero .mp3 de la cancion</h5>
         </header>
-        <div class="container-fluid my-3">
+        <div class="contenedor-inputs">
 			<input type="file" class="btn btn-outline-primary btn-sm  mt-3" name="fileName"> 
 			<input type="submit" class="btn btn-outline-primary btn-sm  mt-3" value="Siguiente paso">
     </div>
@@ -659,6 +659,7 @@
 <!--/#app -->
 <script src="https://maps.googleapis.com/maps/api/js?&amp;key=AIzaSyC3YkZNNySdyR87o83QEHWglHfHD_PZqiw&amp;libraries=places"></script>
 <script src="assets/js/app.js"></script>
+<script  src="assets/js/popup-subir-cancion.js"></script>
 
 
 </body>

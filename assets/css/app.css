@@ -28288,7 +28288,11 @@ to{
 	align-items: center;
 	justify-content: center;
 	display: flex;
-	/*visibility: hidden;*/
+	visibility: hidden;
+}
+
+.overlay-pop-up.active{
+	visibility:visible;
 }
 
 .btn-abrir-popup {
@@ -28309,7 +28313,7 @@ to{
 	border-radius: 3px;
 	padding: 30px;
 	text-align: center;
-	width: 400px;
+	width: 500px;
 }
 
 .popup .btn-cerrar-popup {
@@ -28319,7 +28323,6 @@ to{
 	transition: .3s ease all;
 	text-align: right;
 	display: block;
-
 }
 
 .popup .btn-cerrar-popup:hover {
@@ -28334,4 +28337,14 @@ to{
 	/*opacity: 0;*/
 }
 
+.popup .contenedor-inputs {
+}
+
+.popup .contenedor-inputs input{
+	width: 450px;
+	margin-bottom: 20px;
+	height: 50px;
+	line-height: 30px;
+	font-size: 18px;
+}
 
