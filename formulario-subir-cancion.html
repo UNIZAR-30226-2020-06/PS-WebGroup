@@ -514,7 +514,7 @@
         </li>
     </ul>
 </div>
-    </div>
+</div>
 
 </nav>
 <!--Page Content-->
@@ -530,130 +530,26 @@
                         <h4 class="p-t-10">Alexander Pierce</h4>
                         alexander@paper.com
                     </div>
-                    <a href="#" class="btn btn-outline-primary btn-sm  mt-3">Send Email</a>
-                    <button class="btn btn-abrir-popup btn-sm  mt-3">Subir Canción</button>
-                    <div class="mt-5"> 
-                        <ul class="social social list-inline">
-                            <li class="list-inline-item"><a href="#" class="grey-text"><i class="icon-facebook"></i></a>
-                            </li>
-                            <li class="list-inline-item"><a href="#" class="grey-text"><i class="icon-youtube"></i></a>
-                            </li>
-                            <li class="list-inline-item"><a href="#" class="grey-text"><i class="icon-twitter"></i></a>
-                            </li>
-                        </ul>
-                    </div>
                 </div>
             </div>
-            <div class="col-md-8">
-                <div class="p5 b-b">
-                    <div class="pl-4 mt-4">
-                        <h5>Official Information</h5>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-4">
-                            <div class="p-4">
-                                <h4>Email</h4>
-                                <span>paper_user@panel.com</span>
-                            </div>
-                        </div>
-                        <div class="col-md-3">
-                            <div class="p-4">
-                                <h4>Phone Number</h4>
-                                <span>0092-333-456734</span>
-                            </div>
-                        </div>
-                        <div class="col-md-5">
-                            <div class="p-4">
-                                <h4>Address</h4>
-                                <span>7C Street, Main Market New York City</span>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-                <div class="p5 b-b">
-                    <div class="pl-4 mt-4">
-                        <h5>Personal Information</h5>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-4">
-                            <div class="p-4">
-                                <h4>Facebook</h4>
-                                <span>Facebook.com/paper-panel</span>
-                            </div>
-                        </div>
-                        <div class="col-md-3">
-                            <div class="p-4">
-                                <h4>Phone Number</h4>
-                                <span>0092-333-456734</span>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-
-                <div class="p-4">
-                    <h4>New Followers</h4>
-                    <ul class="list-inline mt-3">
-                        <li class="list-inline-item ">
-                            <img src="assets/img/demo/u13.png" alt="" class="img-responsive w-40px circle mb-3">
-                        </li>
-                        <li class="list-inline-item">
-                            <img src="assets/img/demo/u12.png" alt="" class="img-responsive w-40px circle mb-3">
-                        </li>
-                        <li class="list-inline-item">
-                            <img src="assets/img/demo/u11.png" alt="" class="img-responsive w-40px circle mb-3">
-                        </li>
-                        <li class="list-inline-item">
-                            <img src="assets/img/demo/u10.png" alt="" class="img-responsive w-40px circle mb-3">
-                        </li>
-                        <li class="list-inline-item">
-                            <img src="assets/img/demo/u9.png" alt="" class="img-responsive w-40px circle mb-3">
-                        </li>
-                        <li class="list-inline-item">
-                            <img src="assets/img/demo/u8.png" alt="" class="img-responsive w-40px circle mb-3">
-                        </li>
-                        <li class="list-inline-item ">
-                            <img src="assets/img/demo/u7.png" alt="" class="img-responsive w-40px circle mb-3">
-                        </li>
-                        <li class="list-inline-item">
-                            <img src="assets/img/demo/u6.png" alt="" class="img-responsive w-40px circle mb-3">
-                        </li>
-                        <li class="list-inline-item">
-                            <img src="assets/img/demo/u5.png" alt="" class="img-responsive w-40px circle mb-3">
-                        </li>
-                        <li class="list-inline-item">
-                            <img src="assets/img/demo/u4.png" alt="" class="img-responsive w-40px circle mb-3">
-                        </li>
-                        <li class="list-inline-item">
-                            <img src="assets/img/demo/u3.png" alt="" class="img-responsive w-40px circle mb-3">
-                        </li>
-                        <li class="list-inline-item">
-                            <img src="assets/img/demo/u2.png" alt="" class="img-responsive w-40px circle mb-3">
-                        </li>
-                    </ul>
-                </div>
-
-            </div>
+			<div class="text-center p-5 mt-5">
+				<div class="p5 b-b">
+					<input type="text" name="titulo" class="formulario-subir-cancion" placeholder="Título Canción" required=""/>
+					<select name="Seleccionar género" class="selector-genero">
+						<option>Rock </option>
+						<option>Rap</option>
+					</select>
+				</div>
+				<div="p-4">
+					<input type="submit" class="btn btn-outline-primary btn-sm  mt-3" value="Subir Cancion">
+					<input type="submit" class="btn btn-outline-primary btn-sm  mt-3" value="Cancelar">
+				</div>
+			</div>
         </div>
-
     </div>
 
 </div>
 
-<!-- Bloque de subir cancion datos-->
-<div class="overlay-pop-up">
-    <div class="popup">
-        <header class="relative nav-sticky card">
-                <a href="#" id="btn-cerrar-subir-cancion" class="btn-cerrar-popup"><i class="icon-close1"></i></a>
-				<h3>SUBIR CANCIÓN</h3>
-				<h5>Paso 1: subir el fichero .mp3 de la cancion</h5>
-        </header>
-        <div class="container-fluid my-3">
-			<input type="file" class="btn btn-outline-primary btn-sm  mt-3" name="fileName"> 
-			<input type="submit" class="btn btn-outline-primary btn-sm  mt-3" value="Siguiente paso">
-    </div>
-</div>
 </main><!--@Page Content-->
 </div><!--@#app-->
 <!--/#app -->
@@ -663,5 +559,4 @@
 
 </body>
 
-<!-- Mirrored from xvelopers.com/demos/html/record-light/profile.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 05 Apr 2020 17:22:10 GMT -->
 </html>
