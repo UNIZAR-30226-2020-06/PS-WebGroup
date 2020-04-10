@@ -9562,7 +9562,7 @@ a.bg-dark:focus,a.bg-dark:hover,button.bg-dark:focus,button.bg-dark:hover{
 }
 
 .text-primary{
-	color:#fd7e14!important
+	color:#fd7e14!important;
 }
 
 a.text-primary:focus,a.text-primary:hover{
@@ -19634,7 +19634,7 @@ ul li:before{
 	right:0;
 	bottom:0;
 	padding:10px;
-	background:rgba(255,23,68,.8);
+	background:#fd7e149e;
 	opacity:0;
 	-webkit-transition:opacity .4s;
 	transition:opacity .4s
@@ -28257,7 +28257,11 @@ to{
 
 
 /*-----------------------------------------NUEVOS----------------------------------*/
-
+/***REPRODUCTOR***/
+.reproductor{
+	background:#fff !important;
+	color: #fd7e14
+}
 
 /*--Subir cancion-*/
 .formulario-subir-cancion {
@@ -28275,8 +28279,10 @@ to{
 }
 
 /* ------------------------- */
-/* POPUP */
+/* POPUPS */
 /* ------------------------- */
+
+/**SUBIR CANCION*/
 
 .overlay-pop-up{
 	background: rgba(0,0,0,.3);
@@ -28307,16 +28313,7 @@ to{
 	background:#fd7e14
 }
 
-.popup {
-	background: #f8f8f8;
-	box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
-	border-radius: 3px;
-	padding: 30px;
-	text-align: center;
-	width: 500px;
-}
-
-.popup .btn-cerrar-popup {
+.btn-cerrar-popup {
 	font-size: 16px;
 	line-height: 16px;
 	color:#fd7e14;
@@ -28325,80 +28322,72 @@ to{
 	display: block;
 }
 
-.popup .btn-cerrar-popup:hover {
+.btn-cerrar-popup:hover {
 	color: #000;
 }
 
-.popup h3 {
-	font-size: 30px;
-	font-weight: 600;
-	text-align: center;
-	margin-bottom: 10px;
-	/*opacity: 0;*/
+
+
+/* ------------------------- */
+/* EDICION DE PERFIL		*/
+/* ------------------------- */
+.btn-abrir-popup-perfil {
+	border-radius: 7px;
+	color:#fff;
+	border-color:#fd7e14;
+	background-color: #fd7e14;
+	margin: 15px;
 }
 
-.popup .contenedor-inputs {
+.btn-abrir-popup-perfil:hover{
+	box-shadow:0 3px 9px 0 rgba(0,0,0,.26);
+	opacity:.8;
+	color:#fff;
+	background:#fd7e14;
 }
 
-.popup .contenedor-inputs input{
-	width: 450px;
-	margin-bottom: 20px;
-	height: 50px;
-	line-height: 30px;
-	font-size: 18px;
+/**Lista canciones**/
+.btn-favorito{
+	border-radius: 2px;
+	font-size: 20px;
+	color:#fd7e14;
+	border-color:#fd7e14;
+	margin: 10px;
+	padding: -5px;
 }
 
-/**Contenido de perfil**/
-.contenido-perfil {
-	width:100%;
-	padding-right:1px;
-	padding-left:15px;
-	margin-top:0px;
-	margin-right:auto;
-	margin-left:auto;
-	background: white;
+.btn-favorito:hover{
+	font-size: 25px;
 }
 
-#pestanas {
-	float:top;
-	font-size: 3ex;
-	font-weight: bold;
+.btn-favorito.active{
+	font-size: 20px;
+	color:#fff;
+	background-color:#fd7e14;
+	margin: 10px;
 }
 
-#pestanas ul{
-    margin-left: 0px;    
+
+.btn-favorito.active:hover{
+	font-size: 25px;
 }
 
-#pestanas li{
-    list-style-type: none;
-    float: left;
-    text-align: center;
-    margin: 0px 2px -2px -0px;
-    background: white;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-    border: 2px solid orange;
-    padding: 0px 20px 0px 20px;
+.btn-icono{
+	font-size: 20px;
+	color:#fd7e14;
+	background-color:#fff;
 }
 
-#pestanas :hover{
-	background: orange;
+.btn-icono:hover{
+	font-size: 25px;
+	color: red;
 }
 
-#pestanas a:link{
-    text-decoration: none;
-    color: orange;
+
+.cancion {
+	border:1px solid #fd7e14;
 }
 
-#pestanas a:hover{
-    color: white;
-}
-#contenidopestanas{
-    clear: both;  
-    background: white;
-    padding: 20px 0px 20px 20px;
-    border-radius: 5px;
-    border-top-left-radius: 0px;
-    border: 2px solid orange;
-    width: 100%;
+.cancion:hover{
+	border:3px solid #fd7e14;
 }
