@@ -638,7 +638,24 @@
         </div>
 
     </div>
+	<!-- Contenido usuarios -->
+	<div class="contenido-perfil" >
+		<div id="pestanas">
+			<ul id=lista>
+				<li id="pestana1"><a href='javascript:cambiarPestanna(pestanas,pestana1);'>Canciones</a></li>
+				<li id="pestana2"><a href='javascript:cambiarPestanna(pestanas,pestana2);'>Listas de reproducción</a></li>
+			</ul>
+		</div>
+		 <body onload="javascript:cambiarPestanna(pestanas,pestana1);">
 
+        <div id="contenidopestanas">
+            <div id="cpestana1">
+                Contenido de la pestaña 1
+            </div>
+            <div id="cpestana2">
+                Contenido de la pestaña 2
+            </div>
+	</div>
 </div>
 
 <!-- Bloque de subir cancion datos-->
@@ -656,11 +673,14 @@
 </div>
 </main><!--@Page Content-->
 </div><!--@#app-->
+
+
+
 <!--/#app -->
 <script src="https://maps.googleapis.com/maps/api/js?&amp;key=AIzaSyC3YkZNNySdyR87o83QEHWglHfHD_PZqiw&amp;libraries=places"></script>
 <script src="assets/js/app.js"></script>
 <script  src="assets/js/popup-subir-cancion.js"></script>
-
+<script  src="assets/js/cambiarPestanaPerfil.js"></script>
 
 </body>
 
