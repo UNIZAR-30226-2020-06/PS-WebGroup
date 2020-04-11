@@ -8,7 +8,7 @@
 ########################################################################
 -->
 
-<!-- NOMBRE DE LA PESTAÑA -->
+<!-- PESTAÑA -->
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -19,12 +19,13 @@
     <!-- CSS -->
     <link rel="stylesheet" href="assets/css/app.css">
 </head>
+<!-- END PESTAÑA -->
 
 <body background="assets/img/fondo3.png" style="background-size: cover;background-repeat: no-repeat; background-position: center center;background-attachment: fixed;" class="sidebar-mini sidebar-collapse sidebar-expanded-on-hover has-preloader" style="display: none;">
 <!-- Pre loader
   To disable preloader remove 'has-preloader' from body
  -->
-
+<!-- CIRCULO DE CARGA -->
 <div id="loader" class="loader">
     <div class="loader-container">
         <div class="preloader-wrapper big active">
@@ -70,8 +71,9 @@
         </div>
     </div>
 </div>
+<!-- END CIRCULO DE CARGA -->
 
-<!-- @Pre loader-->
+<!-- EMPIEZA APP -->
 <div id="app">
 
 <!--MENU DE LA IZQUIERDA -->
@@ -119,7 +121,7 @@
         </ul>
     </div>
 </aside>
-<!-- ACABA MENU DE LA IZQUIERDA-->
+<!-- END MENU DE LA IZQUIERDA-->
 
 <!-- MENU DONDE ESTAN LAS CANCIONES EN LA COLA (DERECHA) -->
 <aside class="control-sidebar fixed ">
@@ -214,9 +216,9 @@
 <!-- Add the sidebar's background. This div must be placed
          immediately after the control sidebar -->
 <div class="control-sidebar-bg shadow  fixed"></div>
-<!-- ACABA MENU DERECHA -->
+<!-- END MENU DONDE ESTAN LAS CANCIONES EN LA COLA (DERECHA) -->
 
-
+<!-- ALGO RANDOM DE LA PARTE DERECHA -->
 <svg class="d-none">
     <defs>
         <symbol id="icon-cross" viewBox="0 0 24 24">
@@ -375,7 +377,7 @@
         </div>
     </div>
 </div>
-<!-- ACABA BUSCADOR (LUPA) -->
+<!-- END BUSCADOR (LUPA) -->
 
 
 <!-- BARRA DE ARRIBA FIJA -->
@@ -433,7 +435,7 @@
     </div>
 
 </nav>
-<!-- ACABA BARRA DE ARRIBA FIJA -->
+<!-- END BARRA DE ARRIBA FIJA -->
 
 
 <!-- BARRA DE ABAJO FIJA-->
@@ -479,7 +481,7 @@
         <!--END Player-->
     </div>
 </nav>
-<!-- ACABA BARRA DE ABAJO -->
+<!-- END BARRA DE ABAJO -->
 
 <!--  
 ########################################################################
@@ -492,8 +494,8 @@
 <!--CONTENIDO DEL MEDIO-->
 <main id="pageContent" class="page has-sidebar">
 
-<!-- CABECERA CON LA INFORMACION DEL USUARIO -->
 <div class="container-fluid relative animatedParent animateOnce p-lg-5">
+	<!-- CABECERA CON LA INFORMACION DEL USUARIO -->
     <div class="card no-b shadow no-r">
         <div class="row no-gutters">
 			<div class="col-md-4 b-r">
@@ -528,10 +530,8 @@
                         </div>
                     </div>
                 </div>
-                
 			</div>
         </div>
-
     </div>
 	<!-- TABLA -->
 	<div style="position: relative;top: 15px;" class="card no-b">
@@ -679,13 +679,13 @@
 															<h6>Dance with me tonight</h6>
 														</div>
 														<span class=" ml-auto"> 5:03</span>
-															<a href="#" class="ml-auto"><i class="icon-share-1"></i></a>
-																<div class="ml-auto">
-																	<a href="#" class="btn-favorito icon-star active"></a>
-																	<a href="formulario-datos-cancion.html" class="btn-icono icon-pencil"></a>
-																	<a href="#" class="btn-icono icon-list" id="abrir-anadir-listas-reproduccion"></a>
-																	<a href="#" class="btn-icono icon-trash-o"></a>
-																</div>
+														<a href="#" class="ml-auto"><i class="icon-share-1"></i></a>
+															<div class="ml-auto">
+																<a href="#" class="btn-favorito icon-star active"></a>
+																<a href="formulario-datos-cancion.html" class="btn-icono icon-pencil"></a>
+																<a href="#" class="btn-icono icon-list" id="abrir-anadir-listas-reproduccion"></a>
+																<a href="#" class="btn-icono icon-trash-o"></a>
+															</div>
 													</div>
 												</li>
 											</div>
@@ -697,12 +697,11 @@
 					</div>
 				</div>
 				<!--LISTAS REPRODUCCIÓN-->
-				<div class="tab-pane fade show text-center p-5" id="w3-tab2" role="tabpanel"
-					 aria-labelledby="w3-tab2">
-					 <div class="contenido-pestanas">
+				<div class="tab-pane fade show text-center p-5" id="w3-tab2" role="tabpanel" aria-labelledby="w3-tab2">
+					<div class="contenido-pestanas">
 						<button class="btn btn-abrir-popup icon-plus" id="abrir-listas-reproduccion">Crear Lista de Reproducción</button>
 					</div>
-						<div class="row has-items-overlay">
+					<div class="row has-items-overlay">
 						<div class="col-lg-3 col-md-4 col-sm-6 my-2">
 							<figure>
 								<div class="img-wrapper">
@@ -1036,16 +1035,17 @@
 						</table>
 					</div>
 				</div>
-				</div>
 			</div>
 		</div>
 	</div>
 	<!-- END TABLA -->
+</div>
+	
 
 <!-- END CABECERA CON LA INFORMACION DEL USUARIO -->
 
 
-</main>
+
 
 <!-- Bloque de subir cancion datos-->
 <div class="overlay-pop-up" id="overlay-subir-cancion">
@@ -1063,6 +1063,7 @@
 		</form>
 	</div>
 </div>
+<!-- END Bloque de subir cancion datos-->
 
 
 <!-- EDICION PERFIL -->
@@ -1379,15 +1380,17 @@
 					</div>
 				</div>
 			<!-- #END# Input -->
-		</form>
+			</form>
+		</div>
 	</div>
 </div>
 <!-- END AÑADIR CANCION A LISTA DE REPRODUCCIÓN -->
 
-</main><!--@Page Content-->
+<!--@Page Content-->
+</main>
 
-</div><!--@#app-->
-
+</div>
+<!-- END APP -->
 
 
 <!--/#app -->
