@@ -9562,7 +9562,7 @@ a.bg-dark:focus,a.bg-dark:hover,button.bg-dark:focus,button.bg-dark:hover{
 }
 
 .text-primary{
-	color:#fd7e14!important
+	color:#fd7e14!important;
 }
 
 a.text-primary:focus,a.text-primary:hover{
@@ -28257,7 +28257,11 @@ to{
 
 
 /*-----------------------------------------NUEVOS----------------------------------*/
-
+/***REPRODUCTOR***/
+.reproductor{
+	background:#fff !important;
+	color: #fd7e14
+}
 
 /*--Subir cancion-*/
 .formulario-subir-cancion {
@@ -28275,8 +28279,10 @@ to{
 }
 
 /* ------------------------- */
-/* POPUP */
+/* POPUPS */
 /* ------------------------- */
+
+/**SUBIR CANCION*/
 
 .overlay-pop-up{
 	background: rgba(0,0,0,.3);
@@ -28307,16 +28313,7 @@ to{
 	background:#fd7e14
 }
 
-.popup {
-	background: #f8f8f8;
-	box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
-	border-radius: 3px;
-	padding: 30px;
-	text-align: center;
-	width: 500px;
-}
-
-.popup .btn-cerrar-popup {
+.btn-cerrar-popup {
 	font-size: 16px;
 	line-height: 16px;
 	color:#fd7e14;
@@ -28325,100 +28322,72 @@ to{
 	display: block;
 }
 
-.popup .btn-cerrar-popup:hover {
+.btn-cerrar-popup:hover {
 	color: #000;
 }
 
-.popup h3 {
-	font-size: 30px;
-	font-weight: 600;
-	text-align: center;
-	margin-bottom: 10px;
-	/*opacity: 0;*/
-}
 
-.popup .contenedor-inputs {
-}
-
-.popup .contenedor-inputs input{
-	width: 450px;
-	margin-bottom: 20px;
-	height: 50px;
-	line-height: 30px;
-	font-size: 18px;
-}
 
 /* ------------------------- */
 /* EDICION DE PERFIL		*/
 /* ------------------------- */
-
-.overlay-pop-up-perfil{
-	background: rgba(0,0,0,.3);
-	position: fixed;
-	top: 0;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	align-items: center;
-	justify-content: center;
-	display: flex;
-	visibility: hidden;
-}
-
-.overlay-pop-up-perfil.active{
-	visibility:visible;
-}
-
 .btn-abrir-popup-perfil {
-	color:#fd7e14;
-	border-color:#fd7e14
+	border-radius: 7px;
+	color:#fff;
+	border-color:#fd7e14;
+	background-color: #fd7e14;
+	margin: 15px;
 }
 
 .btn-abrir-popup-perfil:hover{
 	box-shadow:0 3px 9px 0 rgba(0,0,0,.26);
 	opacity:.8;
 	color:#fff;
-	background:#fd7e14
+	background:#fd7e14;
 }
 
-.popup-perfil {
-	background: #f8f8f8;
-	box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
-	border-radius: 3px;
-	padding: 30px;
-	text-align: center;
-	width: 500px;
-}
-
-.popup-perfil .btn-cerrar-popup-perfil {
-	font-size: 16px;
-	line-height: 16px;
+/**Lista canciones**/
+.btn-favorito{
+	border-radius: 2px;
+	font-size: 20px;
 	color:#fd7e14;
-	transition: .3s ease all;
-	text-align: right;
-	display: block;
+	border-color:#fd7e14;
+	margin: 10px;
+	padding: -5px;
 }
 
-.popup-perfil .btn-cerrar-popup-perfil:hover {
-	color: #000;
+.btn-favorito:hover{
+	font-size: 25px;
 }
 
-.popup-perfil h3 {
-	font-size: 30px;
-	font-weight: 600;
-	text-align: center;
-	margin-bottom: 10px;
-	/*opacity: 0;*/
+.btn-favorito.active{
+	font-size: 20px;
+	color:#fff;
+	background-color:#fd7e14;
+	margin: 10px;
 }
 
-.popup-perfil .contenedor-inputs {
+
+.btn-favorito.active:hover{
+	font-size: 25px;
 }
 
-.popup-perfil .contenedor-inputs input{
-	width: 450px;
-	margin-bottom: 20px;
-	height: 50px;
-	line-height: 30px;
-	font-size: 18px;
+.btn-icono{
+	font-size: 20px;
+	color:#fd7e14;
+	background-color:#fff;
 }
 
+.btn-icono:hover{
+	font-size: 25px;
+	color: red;
+}
+
+
+.cancion {
+	border:1px solid #fd7e14;
+}
+
+.cancion:hover{
+	border:3px solid #fd7e14;
+}
