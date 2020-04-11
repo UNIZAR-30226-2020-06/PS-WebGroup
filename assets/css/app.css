@@ -28259,8 +28259,8 @@ to{
 /*-----------------------------------------NUEVOS----------------------------------*/
 /***REPRODUCTOR***/
 .reproductor{
-	background:#fff !important;
-	color: #fd7e14
+   background: blue;
+   width: 800px;
 }
 
 /*--Subir cancion-*/
@@ -28347,6 +28347,10 @@ to{
 }
 
 /**Lista canciones**/
+.contenido-pestanas{
+	margin-bottom: 30px
+}
+
 .btn-favorito{
 	border-radius: 2px;
 	font-size: 20px;

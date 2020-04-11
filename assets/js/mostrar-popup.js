@@ -13,6 +13,14 @@ var btnAbrirCuenta = document.getElementById('abrir-popup-cuenta'),
 var btnAbrirFoto = document.getElementById('abrir-popup-foto'),
 	overlayFoto = document.getElementById('overlay-foto');
 	btnCerrarFoto = document.getElementById('btn-cerrar-foto');
+	
+var btnAbrirCrearLR = document.getElementById('abrir-listas-reproduccion'),
+	overlayCrearLR = document.getElementById('overlay-listas-reproduccion');
+	btnCerrarCrearLR = document.getElementById('btn-cerrar-listas-reproduccion');
+	
+var btnAbrirAnadirLR = document.getElementById('abrir-anadir-listas-reproduccion'),
+	overlayAnadirLR = document.getElementById('overlay-anadir-listas-reproduccion');
+	btnCerrarAnadirLR = document.getElementById('btn-cerrar-anadir-listas-reproduccion');
 
 btnAbrirPerfil.addEventListener('click', function(){
 	overlayPerfil.classList.add('active');
@@ -26,8 +34,8 @@ btnAbrirCancion.addEventListener('click', function(){
 	overlayCancion.classList.add('active');
 });
 
-btnCerrarCuenta.addEventListener('click', function(){
-	overlayCuenta.classList.remove('active');
+btnCerrarCancion.addEventListener('click', function(){
+	overlayCancion.classList.remove('active');
 });
 
 btnAbrirCuenta.addEventListener('click', function(){
@@ -45,4 +53,12 @@ btnAbrirFoto.addEventListener('click', function(){
 
 btnCerrarFoto.addEventListener('click', function(){
 	overlayFoto.classList.remove('active');
+});
+
+btnAbrirCrearLR.addEventListener('click', function(){
+	overlayCrearLR.classList.add('active');
+});
+
+btnCerrarCrearLR.addEventListener('click', function(){
+	overlayCrearLR.classList.remove('active');
 });
