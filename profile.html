@@ -414,7 +414,7 @@
             <div class="dropdown-menu p-4 dropdown-menu-right">
                 <div class="row box justify-content-between my-4">
                     <div class="col text-center">
-                        <a class="ajaxifyPage" href="" id="abrir-popup-cuenta">
+                        <a class="ajaxifyPage" href="#" id="abrir-popup-cuenta">
                             <i class="icon-cog  s-24"></i>
                             <div class="pt-1">Ajustes cuenta</div>
                         </a>
@@ -445,25 +445,19 @@
 			<!-- BOTONES ANTERIOR, PAUSE, SIGUIENTE -->
                 <div class="col">
                     <div class="d-flex align-items-center">
-
 						<button id="shuffleTrack" class="btn btn-link d-none d-sm-block">
                             <i class="icon-shuffle s-18"></i>
                         </button>
-                        <button id="previousTrack" class="btn btn-link d-none d-sm-block">
+                        <!--<button id="previousTrack" class="btn btn-link d-none d-sm-block"></button>-->
 
                         <button id="previousTrack" class="btn btn-link d-none d-sm-block" onclick="playlist.prevTrack();">
-
-                            <i class="icon-back s-18"></i>
+							<i class="icon-back s-18"></i>
                         </button>
 
 						<audio src="" class="reproductor" controls id="audioPlayer" >
 							Sorry, your browser doesn't support html5!
 						</audio>
 						
-						<button class="btn btn-link" id="playPause">
-							<span id="play"><i class="icon-play s-36"></i></span>
-							<span id="pause" style="display: none"><i class="icon-pause s-36 text-primary"></i></span>
-						</button>
                         <button id="nextTrack" class="btn btn-link d-none d-sm-block" onclick="playlist.nextTrack();">
                             <i class="icon-next s-18"></i>
                         </button>
@@ -473,34 +467,17 @@
                     </div>
                 </div>
 				
-				<!-- ONDA -->
-				<div class="col-8 d-none d-lg-block">
-					<div id="waveform">
-						<wave style="display: block; position: relative; user-select: none; height: 50px; overflow: auto hidden;">
-							<wave style="position: absolute; z-index: 3; left: 0px; top: 0px; bottom: 0px; overflow: hidden; width: 135px; display: block; box-sizing: border-box; border-right: 1px solid rgb(51, 51, 51); pointer-events: none;">
-								<canvas style="position: absolute; left: 0px; top: 0px; bottom: 0px; height: 100%; width: 804px;" width="804" height="50"></canvas>
-							</wave>
-							<canvas style="position: absolute; z-index: 2; left: 0px; top: 0px; bottom: 0px; height: 100%; pointer-events: none; width: 804px;" width="804" height="50"></canvas>
-						</wave>
-						<audio preload="auto" src="estopa.mp3" style="width: 100%;"></audio>
-					</div>
-				</div>
-                
-				
 				<!-- COLA -->
                 <div class="col d-none d-lg-block">
                     <small class="track-time mr-2 text-primary align-middle"></small>
-                    <a data-toggle="control-sidebar">
+                    <a style="position: absolute;top: -5px;right: 50px;" data-toggle="control-sidebar">
                         <i class="icon icon-menu-3 s-24 align-middle"></i>Cola
                     </a>
-                </div>
-				
+                </div>	
             </div>
-
         </div>
         <!--END Player-->
     </div>
-
 </nav>
 <!-- ACABA BARRA DE ABAJO -->
 
@@ -520,7 +497,7 @@
     <div class="card no-b shadow no-r">
         <div class="row no-gutters">
 			<div class="col-md-4 b-r">
-			<button style="position: absolute;left: 10px;border-color: transparent;color: #fd7e14;background-color: #fd7e1400;" class="btn btn-abrir-popup-perfil btn-sm  mt-3" id="abrir-popup-perfil"><i style=""class="icon-edit  s-24"></i>Editar perfil</button>
+			<button style="position: absolute;left: 10px;border-color: transparent;color: #fd7e14;background-color: #fd7e1400;" class="btn btn-abrir-popup-perfil btn-sm  mt-3" id="abrir-popup-perfil"><i class="icon-edit  s-24"></i>Editar perfil</button>
                 <div class="text-center p-5 mt-5">
 					
                     <figure style="width: 130px;height: 130px;width-max: 50%;" class="avatar avatar-xl">
@@ -1064,7 +1041,7 @@
 		</div>
 	</div>
 	<!-- END TABLA -->
-</div>
+
 <!-- END CABECERA CON LA INFORMACION DEL USUARIO -->
 
 
@@ -1083,7 +1060,7 @@
 				<input type="file" class="btn btn-outline-primary btn-sm  mt-3" name="fileName"> 
 			</div>
 			<input type="submit" class="btn btn-outline-primary btn-sm  mt-3" value="Continuar">
-		</div>
+		</form>
 	</div>
 </div>
 
@@ -1091,14 +1068,14 @@
 <!-- EDICION PERFIL -->
 <div class="overlay-pop-up" id="overlay-perfil">
     <div class="col-md-7 card p-5">
-		<form class="form-material" action="profile.html">
 			<a style="position: absolute;top: 20px;right: 30px;" href="#" id="btn-cerrar-perfil" class="btn-cerrar-popup"><i class="icon-close1"></i></a>
-			<form class="form-material" action="inicio.html"> <!--QUITAR-->
+			<header class="relative nav-sticky card">
+				<h3>CAMBIAR INFORMACIÓN DE PERFIL</h3>
+			</header>
+			<form class="form-material" action="inicio.html">
 				<!-- Input -->
 				<div class="body">
-					<header class="relative nav-sticky card">
-						<h3>CAMBIAR INFORMACIÓN DE PERFIL</h3>
-					</header>
+					
 					<div class="form-group form-float">
 						<div class="form-line">
 							<input type="text" name="nombre" class="form-control">
@@ -1119,7 +1096,6 @@
 				</div>
 			</form>
 			<!-- #END# Input -->
-		</form>
 	</div>
 </div>
 <!-- END EDICION PERFIL -->
@@ -1128,7 +1104,6 @@
 <!-- AJUSTES CUENTA -->
 <div class="overlay-pop-up" id="overlay-cuenta">
     <div class="col-md-7 card p-5">
-		<form class="form-material" action="profile.html">
 			<a style="position: absolute;top: 20px;right: 30px;" href="#" id="btn-cerrar-cuenta" class="btn-cerrar-popup-perfil"><i class="icon-close1"></i></a>
 			<header class="relative nav-sticky card">
 				<h3>CAMBIAR INFORMACIÓN DE LA CUENTA</h3>
@@ -1174,7 +1149,6 @@
 				</div>
 			</form>
 			<!-- #END# Input -->
-		</form>
 	</div>
 </div>
 <!-- END AJUSTES CUENTA -->
