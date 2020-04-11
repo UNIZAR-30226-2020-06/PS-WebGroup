@@ -441,13 +441,21 @@
     <div class="navbar navbar-expand player-header justify-content-between  bd-navbar">
         <!--Player-->
         <div id="mediaPlayer" class="player-bar col-lg-8 col-md-5" data-auto="true">
-            <div class="row align-items-center grid">
+            <div style="height: 50px;width: 150%;" class="row align-items-center grid">
+			<!-- BOTONES ANTERIOR, PAUSE, SIGUIENTE -->
                 <div class="col">
                     <div class="d-flex align-items-center">
+
+						<button id="shuffleTrack" class="btn btn-link d-none d-sm-block">
+                            <i class="icon-shuffle s-18"></i>
+                        </button>
+                        <button id="previousTrack" class="btn btn-link d-none d-sm-block">
+
                         <button id="previousTrack" class="btn btn-link d-none d-sm-block" onclick="playlist.prevTrack();">
+
                             <i class="icon-back s-18"></i>
                         </button>
-						
+
 						<audio src="" class="reproductor" controls id="audioPlayer" >
 							Sorry, your browser doesn't support html5!
 						</audio>
@@ -459,18 +467,34 @@
                         <button id="nextTrack" class="btn btn-link d-none d-sm-block" onclick="playlist.nextTrack();">
                             <i class="icon-next s-18"></i>
                         </button>
+						<button id="loopTrack" class="btn btn-link d-none d-sm-block">
+                            <i class="icon-repeat s-18"></i>
+                        </button>
                     </div>
                 </div>
-				<div class="col-8 d-none d-lg-block">
-                    <div id="waveform"><wave style="display: block; position: relative; user-select: none; height: 50px; overflow: auto hidden;"><wave style="position: absolute; z-index: 3; left: 0px; top: 0px; bottom: 0px; overflow: hidden; width: 135px; display: block; box-sizing: border-box; border-right: 1px solid rgb(51, 51, 51); pointer-events: none;"><canvas style="position: absolute; left: 0px; top: 0px; bottom: 0px; height: 100%; width: 804px;" width="804" height="50"></canvas></wave><canvas style="position: absolute; z-index: 2; left: 0px; top: 0px; bottom: 0px; height: 100%; pointer-events: none; width: 804px;" width="804" height="50"></canvas></wave><audio preload="auto" src="estopa.mp3" style="width: 100%;"></audio></div>
-                </div>
 				
+				<!-- ONDA -->
+				<div class="col-8 d-none d-lg-block">
+					<div id="waveform">
+						<wave style="display: block; position: relative; user-select: none; height: 50px; overflow: auto hidden;">
+							<wave style="position: absolute; z-index: 3; left: 0px; top: 0px; bottom: 0px; overflow: hidden; width: 135px; display: block; box-sizing: border-box; border-right: 1px solid rgb(51, 51, 51); pointer-events: none;">
+								<canvas style="position: absolute; left: 0px; top: 0px; bottom: 0px; height: 100%; width: 804px;" width="804" height="50"></canvas>
+							</wave>
+							<canvas style="position: absolute; z-index: 2; left: 0px; top: 0px; bottom: 0px; height: 100%; pointer-events: none; width: 804px;" width="804" height="50"></canvas>
+						</wave>
+						<audio preload="auto" src="estopa.mp3" style="width: 100%;"></audio>
+					</div>
+				</div>
+                
+				
+				<!-- COLA -->
                 <div class="col d-none d-lg-block">
                     <small class="track-time mr-2 text-primary align-middle"></small>
                     <a data-toggle="control-sidebar">
-                        <i class="icon icon-menu-3 s-24 align-middle"></i>
+                        <i class="icon icon-menu-3 s-24 align-middle"></i>Cola
                     </a>
                 </div>
+				
             </div>
 
         </div>
@@ -499,7 +523,7 @@
 			<button style="position: absolute;left: 10px;border-color: transparent;" class="btn btn-abrir-popup-perfil btn-sm  mt-3" id="abrir-popup-perfil"><i style=""class="icon-edit  s-24"></i>Editar perfil</button>
                 <div class="text-center p-5 mt-5">
 					
-                    <figure class="avatar avatar-xl">
+                    <figure style="width: 130px;height: 130px;width-max: 50%;" class="avatar avatar-xl">
                         <img src="assets/img/demo/u7.jpg" alt=""></figure>
                     <div>
                         <h4 class="p-t-10">Alexander Pierce</h4>
