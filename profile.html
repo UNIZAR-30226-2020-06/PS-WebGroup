@@ -729,6 +729,9 @@
 									</div>
 								</div>
 							</figure>
+							<div class="contenido-pestanas" style="text-align: center;">
+								<button class="btn btn-abrir-popup icon-trash-o" onclick="document.getElementById('overlay-borrar-listas-reproduccion').classList.add('active');"></button>
+							</div>
 						</div>
 						<div class="col-lg-3 col-md-4 col-sm-6 my-2">
 							<figure>
@@ -748,8 +751,10 @@
 										<span>Atif Aslam</span>
 									</div>
 								</div>
-
 							</figure>
+							<div class="contenido-pestanas" style="text-align: center;">
+								<button class="btn btn-abrir-popup icon-trash-o" onclick="document.getElementById('overlay-borrar-listas-reproduccion').classList.add('active');"></button>
+							</div>
 						</div>
 						<div class="col-lg-3 col-md-4 col-sm-6 my-2">
 							<figure>
@@ -769,8 +774,10 @@
 										<span>Atif Aslam</span>
 									</div>
 								</div>
-
 							</figure>
+							<div class="contenido-pestanas" style="text-align: center;">
+								<button class="btn btn-abrir-popup icon-trash-o" onclick="document.getElementById('overlay-borrar-listas-reproduccion').classList.add('active');"></button>
+							</div>
 						</div>
 						<div class="col-lg-3 col-md-4 col-sm-6 my-2">
 							<figure>
@@ -790,8 +797,10 @@
 										<span>Atif Aslam</span>
 									</div>
 								</div>
-
 							</figure>
+							<div class="contenido-pestanas" style="text-align: center;">
+								<button class="btn btn-abrir-popup icon-trash-o" onclick="document.getElementById('overlay-borrar-listas-reproduccion').classList.add('active');" ></button>
+							</div>
 						</div>
 						<div class="col-lg-3 col-md-4 col-sm-6 my-2">
 							<figure>
@@ -811,8 +820,10 @@
 										<span>Atif Aslam</span>
 									</div>
 								</div>
-
 							</figure>
+							<div class="contenido-pestanas" style="text-align: center;">
+								<button class="btn btn-abrir-popup icon-trash-o" onclick="document.getElementById('overlay-borrar-listas-reproduccion').classList.add('active');"></button>
+							</div>
 						</div>
 						<div class="col-lg-3 col-md-4 col-sm-6 my-2">
 							<figure>
@@ -832,8 +843,10 @@
 										<span>Atif Aslam</span>
 									</div>
 								</div>
-
 							</figure>
+							<div class="contenido-pestanas" style="text-align: center;">
+								<button class="btn btn-abrir-popup icon-trash-o" onclick="document.getElementById('overlay-borrar-listas-reproduccion').classList.add('active');"></button>
+							</div>
 						</div>
 						<div class="col-lg-3 col-md-4 col-sm-6 my-2">
 							<figure>
@@ -853,8 +866,10 @@
 										<span>Atif Aslam</span>
 									</div>
 								</div>
-
 							</figure>
+							<div class="contenido-pestanas" style="text-align: center;">
+								<button class="btn btn-abrir-popup icon-trash-o" onclick="document.getElementById('overlay-borrar-listas-reproduccion').classList.add('active');"></button>
+							</div>
 						</div>
 						<div class="col-lg-3 col-md-4 col-sm-6 my-2">
 							<figure>
@@ -875,6 +890,9 @@
 									</div>
 								</div>
 							</figure>
+							<div class="contenido-pestanas" style="text-align: center;">
+								<button class="btn btn-abrir-popup icon-trash-o" onclick="document.getElementById('overlay-borrar-listas-reproduccion').classList.add('active');"></button>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -1391,6 +1409,29 @@
 	</div>
 </div>
 <!-- END AÑADIR CANCION A LISTA DE REPRODUCCIÓN -->
+<!-- BORRAR LISTA DE REPRODUCCIÓN -->
+<div class="overlay-pop-up" id="overlay-borrar-listas-reproduccion">
+    <div class="col-md-7 card p-5">
+        <a style="position: absolute;top: 20px;right: 30px;" href="#" id="btn-cerrar-borrar-listas-reproduccion" class="btn-cerrar-popup-perfil"
+        class="btn btn-outline-primary btn-sm pl-4 pr-4"  onclick="document.getElementById('overlay-borrar-listas-reproduccion').classList.remove('active');"><i class="icon-close1"></i></a>
+		<form class="form-material" action="albums.html">
+			<!-- Input -->
+			<div class="body">
+				<header class="relative nav-sticky card">
+                    <h3>¿Estas seguro?</h3>
+                    <h5>Vas a borrar esta lista de reproduccion para siempre, no hay vuelta atras</h5>
+				</header>
+
+
+				<input type="submit" class="btn btn-outline-primary btn-sm pl-4 pr-4"
+                       value="Aceptar">
+                <button class="btn btn-outline-primary btn-sm pl-4 pr-4"  onclick="document.getElementById('overlay-borrar-listas-reproduccion').classList.remove('active');">Cerrar</button>
+			</div>
+			<!-- #END# Input -->
+        </form>
+	</div>
+</div>
+<!-- END BORRAR LISTA DE REPRODUCCIÓN -->
 
 </main><!--@Page Content-->
 
